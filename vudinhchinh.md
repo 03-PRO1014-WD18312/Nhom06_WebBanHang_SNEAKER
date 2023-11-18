@@ -1,1 +1,1 @@
-Xin chào , tôi tên chinh
+tôi là chinh
