@@ -773,3 +773,22 @@ background-color:#ffff;
 border-radius:5px;
 border:1px #ccc solid;
 }
+
+.box_items {
+  float: left; /* hoặc sử dụng display: inline-block; */
+  margin-right: 20px; /* tùy chỉnh khoảng cách giữa các sản phẩm */
+  margin-left: 10px;
+  height: 360px;
+  width: 290px;
+  border-radius: 20px;
+  border: 1px solid rgb(193, 182, 182);
+}
+.clear {
+  clear: both;
+}
+.box_items img{
+  width: 280px;
+  height: 220px;
+  margin-top: 4px;
+  border-radius: 20px;
+}
