@@ -318,6 +318,15 @@ ul li a:hover{
   border-radius: 10px;
   margin-top: 16px;
 }
+.addcart{
+  background-color: rgb(89, 96, 96);
+  color: aliceblue;
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 6px;  
+  margin-bottom: 4px;
+}
 .content img{
   transition: 1s ease-in-out;
 }
@@ -782,7 +791,7 @@ border:1px #ccc solid;
 float: left; /* hoặc sử dụng display: inline-block; */
 margin-right: 20px; /* tùy chỉnh khoảng cách giữa các sản phẩm */
 margin-left: 10px;
-height: 360px;
+height: 372x;
 width: 290px;
 border-radius: 20px;
 border: 1px solid rgb(193, 182, 182);
