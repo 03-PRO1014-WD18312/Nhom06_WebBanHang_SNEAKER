@@ -25,7 +25,7 @@
                                        <a href="' . $linksp . '"><img src="' . $hinh . '" alt="" width=200></a>
                                                <div class="sub">
                                                    <h2>' . $name . '</h2>
-                                                   <p>' . $price . '</p>
+                                                   <p>' . $price . ' VND</p>
                                                </div>
                                                <div class="content-button">
                                                    <a href="' . $linksp . '"><button>Xem Chi Tiết</button></a>
@@ -78,7 +78,7 @@
                                                <img src="' . $hinh . '" alt="" width=200>
                                                <div class="sub">
                                                    <h2>' . $name . '</h2>
-                                                   <p>' . $price . '</p>
+                                                   <p>' . $price . ' VND</p>
                                                </div>
                                                <div class="content-button">
                                                    <a href="' . $linksp . '"><button>Xem Chi Tiết</button></a>
