@@ -3,6 +3,7 @@
  include "../model/danhmuc.php";
  include "../model/sanpham.php";
  include "../model/taikhoan.php";
+ include "../model/cart.php";
  include "../model/thongke.php";
 
  include "header.php";
@@ -129,6 +130,7 @@
                 $dsthongke = load_thongke_sanpham_danhmuc();
                 include "thongke/bieudo.php";             
                 break;
+
             case 'listbill':
                 if(isset($_POST['kyw']) && $_POST['kyw']!=""){
                     $kyw =$_POST['kyw'];
