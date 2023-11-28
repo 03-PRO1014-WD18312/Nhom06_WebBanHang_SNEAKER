@@ -2,6 +2,10 @@
   if(is_array($dm)){
     extract($dm);
 }
+
+if(isset($_SESSION['user'])){
+    extract($_SESSION['user']);
+ if($role == 1){
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,3 +49,7 @@
 
 </body>
 </html>
+<?php }}else{
+       echo "Bạn không có quyền đăng nhập admin";
+       header('location:../index.php');
+    } ?>
