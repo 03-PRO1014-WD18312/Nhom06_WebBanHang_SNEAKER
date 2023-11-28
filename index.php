@@ -141,6 +141,10 @@
             $billct = loadall_cart($idbill);
             include "view/cart/billcomfirm.php";
             break;
+        case 'mybill':
+            $listbill = loadall_bill($kyw="",$_SESSION['user']['id']);
+            include "view/cart/mybill.php";
+            break;
     default:
         include "view/home.php";
         break;
