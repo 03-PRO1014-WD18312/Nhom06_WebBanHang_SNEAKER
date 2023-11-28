@@ -12,6 +12,7 @@
  $dsdm = loadall_danhmuc();
  $sp_banchay = loadall_sanpham_banchay();
  $sp_new = loadall_sanpham_new();
+
  if((isset($_GET['act'])) && ($_GET['act'] !="")){
     $act = $_GET['act'];
    switch ($act) {
@@ -19,7 +20,7 @@
             if(isset($_GET['idsp'])&&($_GET['idsp']>0)){
                 $id = $_GET['idsp'];
                 $onesp = loadone_sanpham($id);
-
+                
                 extract($onesp);
                 $sp_cung_loai=load_sanpham_cungloai($id,$iddm);
                 include "view/sanphamct.php";
@@ -94,8 +95,7 @@
                 $soluong = 1;
                 $ttien = $soluong*$price;
                 $spadd = [$id,$name,$img,$price,$soluong,$ttien];
-                array_push($_SESSION['mycart'],$spadd);
-                
+                array_push($_SESSION['mycart'],$spadd);               
             }
             include "view/cart/viewcart.php";
             break;
@@ -118,24 +118,27 @@
                 break;
         case 'billcomfirm':
             if(isset($_POST['dongydathang'])&&($_POST['dongydathang'])){
+                if(isset($_SESSION['user'])) $iduser=$_SESSION['user']['id'];
+                else $id=0;
                 $name=$_POST['name'];
                 $email=$_POST['email'];
                 $address=$_POST['address'];
                 $tel=$_POST['tel'];
                 $pttt=$_POST['pttt'];
                 
-                $ngaydathang = date('H:i:sA d/m/Y');  
+                date_default_timezone_set('Asia/Ho_Chi_Minh');
+                $ngaydathang = date('H:i:sA d/m/Y'); 
                 $tongdonhang = tongdonhang();
-                //tạo bill
-                $idbill= insert_bill($name,$email,$address,$tel,$pttt,$tongdonhang,$ngaydathang);
+               //tạo bill
+               $idbill= insert_bill($iduser,$name,$email,$address,$tel,$pttt,$tongdonhang,$ngaydathang);
 
-                //insert into cart : $SESSION['mycart'] & idbill;
-                foreach($_SESSION['mycart'] as $cart) {
+               //insert into cart : $SESSION['mycart'] & idbill;
+               foreach($_SESSION['mycart'] as $cart) {
                     extract($cart);
                     insert_cart($_SESSION['user']['id'],$cart[0],$cart[2],$cart[1],$cart[3],$cart[4],$cart[5],$idbill);
-                }
-                //xóa cart
-                $_SESSION['cart']= "";
+               }
+               //xóa cart
+               $_SESSION['cart']= "";
             }
             $bill = loadone_bill($idbill);
             $billct = loadall_cart($idbill);
