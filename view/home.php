@@ -25,7 +25,7 @@
                                        <a href="' . $linksp . '"><img src="' . $hinh . '" alt="" width=200></a>
                                                <div class="sub">
                                                    <h2>' . $name . '</h2>
-                                                   <p>' . $price . '</p>
+                                                   <p>' . $price . ' VND</p>
                                                </div>
                                                <div class="content-button">
                                                    <a href="' . $linksp . '"><button>Xem Chi Tiết</button></a>
@@ -36,7 +36,7 @@
                                                 <input type="hidden" name="name" value="'.$name.'">
                                                 <input type="hidden" name="img" value="'.$img.'">
                                                 <input type="hidden" name="price" value="'.$price.'">
-                                                <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+                                                <input class="addcart" type="submit" name="addtocart" value="Thêm vào giỏ hàng">
                                                </form>
                                                 </div>
                                                </div>';                                  
@@ -78,7 +78,7 @@
                                                <img src="' . $hinh . '" alt="" width=200>
                                                <div class="sub">
                                                    <h2>' . $name . '</h2>
-                                                   <p>' . $price . '</p>
+                                                   <p>' . $price . ' VND</p>
                                                </div>
                                                <div class="content-button">
                                                    <a href="' . $linksp . '"><button>Xem Chi Tiết</button></a>
@@ -89,7 +89,7 @@
                                                 <input type="hidden" name="name" value="'.$name.'">
                                                 <input type="hidden" name="img" value="'.$img.'">
                                                 <input type="hidden" name="price" value="'.$price.'">
-                                                <input type="submit" name="addtocart" value="Thêm vào giỏ hàng">
+                                                <input class="addcart" type="submit" name="addtocart" value="Thêm vào giỏ hàng">
                                                </form>
                                             </div>                               
                                                </div>';                                  

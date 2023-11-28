@@ -1,10 +1,17 @@
 <?php
+ session_start();
  include "../model/pdo.php";
  include "../model/danhmuc.php";
  include "../model/sanpham.php";
  include "../model/taikhoan.php";
  include "../model/cart.php";
  include "../model/thongke.php";
+
+ //chặn
+ if(isset($_SESSION['user'])){
+     extract($_SESSION['user']);
+  if($role == 1){
+ 
 
  include "header.php";
  if(isset($_GET['act'])){
@@ -176,5 +183,9 @@
     include "home.php";
  }
  include "footer.php";
+
+ }}else{
+    header('Location:../index.php');    
+ } 
 
 ?>

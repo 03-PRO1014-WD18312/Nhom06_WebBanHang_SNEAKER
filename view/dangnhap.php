@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .form-dangnhap{
+       .form-dangnhap{
             text-align: center;
-            border: 1px solid black;
+            border: 1px solid 	#DCDCDC;
             margin: 200px 500px 50px 500px;
             margin-top: 100px;
             height: 330px;
             border-radius: 20px;
+            background-color: #F8F8FF;
         }
         .form-dangnhap h1{
             margin-top: 10px;
@@ -25,11 +26,13 @@
             width: 300px;
             border-radius: 4px;
             height: 26px;
+            border: 1px solid #DCDCDC;
         }
         .password input{
             width: 300px;
             border-radius: 4px;
             height: 26px;
+            border: 1px solid #DCDCDC;
         }
         li a{
             text-decoration: none;
@@ -53,11 +56,12 @@
         }
         .form-taikhoan{
             text-align: center;
-            border: 1px solid black;
+            border: 1px solid 	#DCDCDC;
             margin: 200px 500px 50px 500px;
             margin-top: 100px;
             height: 330px;
             border-radius: 20px;
+            background-color: 	#F8F8FF;
         }
         .form-taikhoan h1{
             margin-top: 10px;
@@ -77,7 +81,7 @@ if(isset($_SESSION['user'])){
   <?php } ?>
 
   <li class="form_li1"><a href="index.php?act=thoat">Đăng Xuất</a></li>
-  <li class="form_li1"><a href="#">Trạng Thái Đơn Hàng</a></li>
+  <li class="form_li1"><a href="index.php?act=mybill">Trạng Thái Đơn Hàng</a></li>
   <li class="form_li1"><a href="#">Cập Nhập Thông Tin</a></li>
 </div>
 

@@ -1,3 +1,8 @@
+<?php
+if(isset($_SESSION['user'])){
+    extract($_SESSION['user']);
+ if($role == 1){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,3 +41,7 @@
 
 </body>
 </html>
+<?php }}else{
+       echo "Bạn không có quyền đăng nhập admin";
+       header('location:../index.php');
+    } ?>
