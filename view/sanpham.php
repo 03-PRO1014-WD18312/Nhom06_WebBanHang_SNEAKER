@@ -87,6 +87,15 @@
                         <div class="content-button">
                             <a href="' . $linksp . '"><button>Xem Chi Tiết</button></a>
                         </div>
+                        <div class="row btn_addtocart"> 
+                            <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="id" value="' . $id . '">
+                                <input type="hidden" name="name" value="' . $name . '">
+                                <input type="hidden" name="img" value="' . $img . '">
+                                <input type="hidden" name="price" value="' . $price . '">
+                                <input class="addcart" type="submit" name="addtocart" onclick="addToCart()" value="Thêm vào giỏ hàng">
+                            </form>
+                        </div>
                         </div>';                                  
                 $i += 1;                                                                     
                 if ($i >= 30) {
