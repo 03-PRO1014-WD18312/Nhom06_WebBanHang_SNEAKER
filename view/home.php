@@ -1,5 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box_items {
+        float: left; /* hoặc sử dụng display: inline-block; */
+        margin-right: 20px; /* tùy chỉnh khoảng cách giữa các sản phẩm */
+        margin-left: 10px;
+        height: 414px;
+        width: 290px;
+        border-radius: 20px;
+        border: 1px solid #e0e0e6;
+        background-color: #F8F8FF;
+        
+        }
+        .banner2{
+            text-align: center;
+            margin-bottom: 100px;
+            margin-top: 100px;
+            }
+        .tintucmoinhat-title{
+            margin-top: 100px;
+        }
+</style>
+<body>
+ 
 <div class="banner">
-
 </div>
 </div>
 <main>
@@ -26,6 +55,7 @@
                                                <div class="sub">
                                                    <h2>' . $name . '</h2>
                                                    <p>' . $price . ' VND</p>
+                                                   <p style="color: blue;">Lượt xem: '.$luotxem.'</p>
                                                </div>
                                                <div class="content-button">
                                                    <a href="' . $linksp . '"><button>Xem Chi Tiết</button></a>
@@ -79,6 +109,7 @@
                                                <div class="sub">
                                                    <h2>' . $name . '</h2>
                                                    <p>' . $price . ' VND</p>
+                                                   <p style="color: blue;">Lượt xem: '.$luotxem.'</p>
                                                </div>
                                                <div class="content-button">
                                                    <a href="' . $linksp . '"><button>Xem Chi Tiết</button></a>
@@ -161,3 +192,7 @@
         </div>
     </div>
     <!-- hết tin tức mới nhất -->
+
+       
+</body>
+</html>
