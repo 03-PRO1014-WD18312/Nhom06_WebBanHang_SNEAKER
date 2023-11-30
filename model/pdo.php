@@ -17,7 +17,32 @@ function pdo_get_connection(){
  * @param array $args mảng giá trị cung cấp cho các tham số của $sql
  * @throws PDOException lỗi thực thi câu lệnh
  */
-function pdo_execute($sql){
+
+ function update_viewsp($id, $currentValue) {
+    $dburl = "mysql:host=localhost;dbname=duan1;charset=utf8";
+    $username = 'root';
+    $password = '';
+
+
+    try {
+        $conn = new PDO($dburl, $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $sql = "UPDATE sanpham SET luotxem = :currentValue WHERE id = :id";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':currentValue', $currentValue);
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+
+        echo "Cập nhật lượt xem sản phẩm thành công";
+    } catch(PDOException $e) {
+        echo "Lỗi: " . $e->getMessage();
+    }
+
+    $conn = null;
+}
+
+ function pdo_execute($sql){
     $sql_args = array_slice(func_get_args(), 1);
     try{
         $conn = pdo_get_connection();

@@ -16,17 +16,34 @@
  if((isset($_GET['act'])) && ($_GET['act'] !="")){
     $act = $_GET['act'];
    switch ($act) {
-        case 'sanphamct':
-            if(isset($_GET['idsp'])&&($_GET['idsp']>0)){
-                $id = $_GET['idsp'];
-                $onesp = loadone_sanpham($id);
-                
-                extract($onesp);
-                $sp_cung_loai=load_sanpham_cungloai($id,$iddm);
-                include "view/sanphamct.php";
-            }else {
-                include "view/home.php";
+    case 'sanphamct':
+        if(isset($_GET['idsp']) && ($_GET['idsp'] > 0)){
+            session_start();
+            
+
+            
+            if (!isset($_SESSION['luottruycapsanpham']) || !is_array($_SESSION['luottruycapsanpham'])) {
+                $_SESSION['luottruycapsanpham'] = array(); // Khởi tạo biến session là một mảng nếu chưa có
             }
+            $id = $_GET['idsp'];
+            $onesp = loadone_sanpham($id);
+    
+           
+            if(isset($_SESSION['luottruycapsanpham'][$id])){
+                $_SESSION['luottruycapsanpham'][$id] += 1; // Nếu đã có, tăng lượt xem
+            } else {
+                $_SESSION['luottruycapsanpham'][$id] = 1; // Nếu chưa có, khởi tạo lượt xem
+            }
+    
+           
+            update_viewsp($id, $_SESSION['luottruycapsanpham'][$id]);
+    
+            extract($onesp);
+            $sp_cung_loai = load_sanpham_cungloai($id, $iddm);
+            include "view/sanphamct.php";
+        } else {
+            include "view/home.php";
+        }
         break;
         case 'sanpham':
             if(isset($_POST['kyw'])&&($_POST['kyw']!="")){
