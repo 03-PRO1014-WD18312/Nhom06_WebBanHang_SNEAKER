@@ -191,7 +191,7 @@
             <img src="<?= $img ?>" alt="">
         </div>
         <div class="sanphamct-text">
-            <h2><?= $mota ?></h2>
+            <h2><?= $name ?></h2>
             <div class="line"></div>
             <p class="price"><?= $price ?> VND</p>
             <div class="form-size">

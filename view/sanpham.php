@@ -44,7 +44,6 @@
                                 $linkdm = "index.php?act=sanpham&iddm=".$id;
                                 echo '<li>       
                                         <a href="'.$linkdm.'">'.$name.'</a>                        
-                                        <a href="'.$linkdm.'">'.$name.'</a>
                                     </li>';                              
                             }
                         ?>
