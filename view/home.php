@@ -54,7 +54,7 @@
                                        <a href="' . $linksp . '"><img src="' . $hinh . '" alt="" width=200></a>
                                                <div class="sub">
                                                    <h2>' . $name . '</h2>
-                                                   <p>' . $price . ' VND</p>
+                                                   <p>' .number_format($price, 0, ',', '.'). ' VND</p>
                                                    <p style="color: blue;">Lượt xem: '.$luotxem.'</p>
                                                </div>
                                                <div class="content-button">
@@ -108,7 +108,7 @@
                                                <img src="' . $hinh . '" alt="" width=200>
                                                <div class="sub">
                                                    <h2>' . $name . '</h2>
-                                                   <p>' . $price . ' VND</p>
+                                                   <p>' .number_format($price, 0, ',', '.'). ' VND</p>
                                                    <p style="color: blue;">Lượt xem: '.$luotxem.'</p>
                                                </div>
                                                <div class="content-button">
