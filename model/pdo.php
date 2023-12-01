@@ -19,7 +19,7 @@ function pdo_get_connection(){
  */
 
  function update_viewsp($id, $currentValue) {
-    $dburl = "mysql:host=localhost;dbname=duan1;charset=utf8";
+    $dburl = "mysql:host=localhost;dbname=da1;charset=utf8";
     $username = 'root';
     $password = '';
 

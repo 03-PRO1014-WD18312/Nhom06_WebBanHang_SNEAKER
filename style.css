@@ -42,6 +42,7 @@ ul li a:hover{
 .sanphambanchay{
   text-align: center;
   height: 900px;
+  margin-bottom: 50px;
 }
 .sanphambanchay-title{
   text-align: center;
@@ -799,7 +800,7 @@ border:1px #ccc solid;
 float: left; /* hoặc sử dụng display: inline-block; */
 margin-right: 20px; /* tùy chỉnh khoảng cách giữa các sản phẩm */
 margin-left: 10px;
-height: 384px;
+height: 394px;
 width: 290px;
 border-radius: 20px;
 border: 1px solid #e0e0e6;

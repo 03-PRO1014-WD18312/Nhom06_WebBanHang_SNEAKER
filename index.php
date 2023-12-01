@@ -18,10 +18,7 @@
    switch ($act) {
     case 'sanphamct':
         if(isset($_GET['idsp']) && ($_GET['idsp'] > 0)){
-            session_start();
-            
-
-            
+   
             if (!isset($_SESSION['luottruycapsanpham']) || !is_array($_SESSION['luottruycapsanpham'])) {
                 $_SESSION['luottruycapsanpham'] = array(); // Khởi tạo biến session là một mảng nếu chưa có
             }
