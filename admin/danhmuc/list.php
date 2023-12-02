@@ -96,6 +96,24 @@ label{
 .mb10{
     margin-top: 20px;
 }
+.input1{
+  background-color: red;
+  color: white;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid red;
+}
+.input1:hover{
+  background-color: #990000;
+}
+table tr th{
+ height: 50px;
+ border: 2px solid black;
+ background-color: #FFFFCC;
+}
+table tr td{
+  background-color: #FFFFFF;
+}
 /* end admin */
     </style>
 </head>
@@ -123,7 +141,7 @@ label{
                         <td><input type="checkbox" name="" id=""></td>
                         <td>'.$id.'</td>
                         <td>'.$name.'</td>
-                        <td><a href="'.$suadm.'"><input type="button" value="Sửa"></a>  <a href="'.$xoadm.'"><input type="button" value="Xóa"></td></a>
+                        <td><a href="'.$suadm.'"><input class="input1" type="button" value="Sửa"></a>  <a href="'.$xoadm.'"><input class="input1" type="button" value="Xóa"></td></a>
                      </tr>';
                 }
             ?>

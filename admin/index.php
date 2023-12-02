@@ -175,6 +175,12 @@
                 $listbill = loadall_bill("",0);
                 include "bill/listbill.php";
                 break;
+            case 'xemsp':
+                if(isset($_GET['id'])&&($_GET['id']>0)){
+                    $sp=loadall_cart($_GET['id']);
+                }
+                include "bill/ttsp.php";
+                break;
         default:
             include "home.php";
             break;

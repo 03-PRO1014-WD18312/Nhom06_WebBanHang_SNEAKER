@@ -96,6 +96,24 @@ label{
 .mb10{
     margin-top: 20px;
 }
+table tr th{
+ height: 50px;
+ border: 2px solid black;
+ background-color: #FFFFCC;
+}
+table tr td{
+  background-color: #FFFFFF;
+}
+.input1{
+  background-color: red;
+  color: white;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid red;
+}
+.input1:hover{
+  background-color: #990000;
+}
 /* end admin */
     </style>
 </head>
@@ -127,6 +145,7 @@ label{
                 foreach ($listbill as $bill) {
                     extract($bill);
                     $suattdh = "index.php?act=suattdh&id=".$id;
+                    $xemsp = "index.php?act=xemsp&id=".$id;
                     $kh=$bill["bill_name"].'
                     <br>'.$bill["bill_email"].'
                     <br>'.$bill["bill_address"].'
@@ -141,7 +160,7 @@ label{
                     <td><strong>'.$bill['total'].' VND</strong> </td>
                     <td>'.$ttdh.'</td>
                     <td>'.$bill["ngaydathang"].'</td>
-                    <td><a href="'.$suattdh.'"><input type="button" value="Sửa"></a></td>
+                    <td><a href="'.$suattdh.'"><input class="input1" type="button" value="Sửa"></a> <a href="'.$xemsp.'"><input class="input1" type="button" value="Xem Sản Phẩm"></a></td>
                    
                     </tr>';
                 }
