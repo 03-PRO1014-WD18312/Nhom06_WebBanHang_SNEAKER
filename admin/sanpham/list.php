@@ -96,6 +96,26 @@ label{
 .mb10{
     margin-top: 20px;
 }
+table tr th{
+ height: 50px;
+ border: 2px solid black;
+ background-color: #FFFFCC;
+}
+table tr td{
+  background-color: #FFFFFF;
+}
+.input1{
+  background-color: red;
+  color: white;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid red;
+  width: 50px;
+  margin-top: 4px;
+}
+.input1:hover{
+  background-color: #990000;
+}
 /* end admin */
     </style>
 </head>
@@ -158,7 +178,7 @@ label{
                 <td>'.$price.'</td>
                 <td>'.$mota.'</td>
                 <td>'.$luotxem.'</td>
-                <td><a href="'.$suasp.'"><input type="button" value="Sửa"></a>  <a href="'.$xoasp.'"><input type="button" value="Xóa"></td></a>
+                <td><a href="'.$suasp.'"><input class="input1" type="button" value="Sửa"></a>  <a href="'.$xoasp.'"><input class="input1" type="button" value="Xóa"></td></a>
                     </tr>';
                 }
             ?>
