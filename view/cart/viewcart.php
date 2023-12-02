@@ -1,3 +1,6 @@
+<?php
+if(isset($_SESSION['user'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,3 +116,8 @@
 <script nomodule="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+<?php
+}else{
+    header('Location: index.php?act=dangnhap');
+}
+?>
