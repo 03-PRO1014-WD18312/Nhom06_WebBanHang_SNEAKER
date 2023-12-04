@@ -82,13 +82,13 @@ function bill_chi_tiet($listbill){
         <td></td>                          
         <td><img src="'.$hinh.'" alt="" width="120px" height="120px"></td>
         <td>'.$cart['name'].'</td>
-        <td>'.$cart['price'].' VND</td>                          
+        <td>'.number_format($cart['price'], 0, ',', '.').' VND</td>                          
     </tr>';
     $i+=1;
     }
     echo ' <tr>          
         <td colspan="4">Tổng Đơn Hàng</td>                       
-        <td colspan="3">'.$tong.' VND</td>
+        <td colspan="3">'.number_format($tong, 0, ',', '.').' VND</td>
         </tr>';
 }
 

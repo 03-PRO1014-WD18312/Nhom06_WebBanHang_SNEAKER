@@ -60,7 +60,7 @@
                         <td>'.$bill['id'].'</td>
                         <td>'.$countsp.'</td>
                         <td>'.$bill['ngaydathang'].'</td>
-                        <td>'.$bill['total'].' VND</td>
+                        <td>'.number_format($bill['total'], 0, ',', '.').' VND</td><p>
                         <td>'.$kh.'</td>
                         <td class="ttdh">'.$ttdh.'</td>
                    </tr> ';
