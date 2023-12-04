@@ -41,7 +41,7 @@ if(isset($_SESSION['user'])){
         <h2>Chi tiết đơn hàng:</h2>
         <h3>-Mã đơn hàng : <?= $bill['id']; ?></h3>
         <h3>-Ngày đặt hàng: <?= $bill['ngaydathang']; ?></h3>
-        <h3>-Tổng đơn hàng: <?= $bill['total']; ?> VND</h3>
+        <h3>-Tổng đơn hàng: <?= number_format($bill['total'], 0, ',', '.'); ?> VND</h3>
         <h3>-Phương thức thanh toán: <?= $bill['bill_pttt']; ?></h3>
         <hr class="hr-bottom">
         <div class="notify-detail-one"> 

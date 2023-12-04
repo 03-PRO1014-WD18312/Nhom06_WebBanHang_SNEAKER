@@ -21,11 +21,19 @@ if(isset($_SESSION['user'])){
         text-align: center;
     }
     table tr td{
-        border: 1px solid black;
+        border: 1px solid #DDDFCC;
     }
     table tr th{
         border: 1px solid black;
     }
+    table tr th{
+ height: 50px;
+ border: 1px solid #DDDFCC;
+ background-color: #FFFFCC;
+}
+table tr td{
+  background-color: #FFFFFF;
+}
 </style>
 </head>
 <body>

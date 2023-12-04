@@ -6,29 +6,63 @@
     <title>Document</title>
 </head>
 <style>
-    .box_items {
-        float: left; /* hoặc sử dụng display: inline-block; */
-        margin-right: 20px; /* tùy chỉnh khoảng cách giữa các sản phẩm */
-        margin-left: 10px;
-        height: 414px;
-        width: 290px;
-        border-radius: 20px;
-        border: 1px solid #e0e0e6;
-        background-color: #F8F8FF;
+.box_items {
+    float: left; /* hoặc sử dụng display: inline-block; */
+    margin-right: 20px; /* tùy chỉnh khoảng cách giữa các sản phẩm */
+    margin-left: 10px;
+    height: 414px;
+    width: 290px;
+    border-radius: 20px;
+    border: 1px solid #e0e0e6;
+    background-color: #F8F8FF;
+    
+    }
+    .banner2{
+        text-align: center;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        }
+    .tintucmoinhat-title{
+        margin-top: 100px;
+    }
+    .banner img{
+        height: 550px;
+        width: 100%;
+        margin-top: 78px;
+        } 
+    .pre, .next{
+        cursor:pointer;
+        position:absolute;
+        top:50%;
+        width:auto;
+        padding:16px;
+        color:white;
+        font-weight:bold;
+        font-size:18px;
+        transition:0.6s ease-in-out;
+        border-radius:0 3px 3px 0;
+        border:none;
         
-        }
-        .banner2{
-            text-align: center;
-            margin-bottom: 100px;
-            margin-top: 100px;
-            }
-        .tintucmoinhat-title{
-            margin-top: 100px;
-        }
+    }
+    .pre:hover, .next:hover{
+        background-color:rgba(0,0,0,0.8);
+    }
+    .next{
+        right:0;
+        border-radius:3px 0 0 3px;
+    }
+    .pre{
+        left:0;
+        border-radius:0 3px 3px 0;
+    }
 </style>
 <body>
  
 <div class="banner">
+    <img id="banner" src="./img/anh0.jpg" alt="loii">
+    <button class="pre" onclick="pre()">&#10094;</button>
+    <button class="next" onclick="next()">&#10095;</button>
+    </div>
 </div>
 </div>
 <main>
@@ -169,7 +203,7 @@
                     <div class="line"></div>
                 </div>
                 <div class="tintucmoinhat-content-right">
-                    <img src="img/tinmoi.jpg" alt="" width="250" height="230">
+                    <img src="img/anh3.jpg" alt="" width="250" height="230">
                     <h2>Chọn giày dép lúc nào cũng vừa in chân</h2>
                     <p>22/10/2019</p>
                     <div class="line"></div>
@@ -177,7 +211,7 @@
             </div>
             <div class="tintucmoinhat-right-bottom">
                 <div class="tintucmoinhat-content-right">
-                    <img src="img/tinmoi1.jpg" alt="" width="250" height="230">
+                    <img src="img/anh2.jpg" alt="" width="250" height="230">
                     <h2>Chọn giày dép lúc nào cũng vừa in chân</h2>
                     <p>22/10/2019</p>
                     <div class="line"></div>

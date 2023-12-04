@@ -96,7 +96,7 @@
                         echo '<tr>                                  
                         <td><img src="'.$hinh.'" alt="" width="120px" height="120px"></td>
                         <td colspan="3">'.$cart[1].'</td>
-                        <td colspan="6">'.$cart[3].' VNĐ</td>                           
+                        <td colspan="6">'.number_format($cart[3], 0, ',', '.').' VNĐ</td>                           
                     </tr>';
                     $i+=1;
                     }
@@ -108,7 +108,7 @@
                        
                     </div>
                     <div class="page-product-four">
-                        <p><?= $tong ?> VNĐ</p>
+                        <p><?= number_format($tong, 0, ',', '.') ?> VNĐ</p>
                     </div>
                 </div> 
             </div>
