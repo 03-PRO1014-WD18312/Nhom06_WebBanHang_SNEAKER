@@ -20,7 +20,7 @@
         <div id="footer">
            <div class="footer-left">
              <div class="footer-logo">
-               <img src="./img/3.png" alt="" />
+               <img src="./img/logo.jpg" alt="" />
              </div>
              <div class="card_1">
                <h3>CÔNG TY ĐIỆN TỬ FPT SỐ 1 VIỆT NAM</h3>
@@ -95,5 +95,6 @@
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="slideshow.js"></script>
 </body>
 </html>
