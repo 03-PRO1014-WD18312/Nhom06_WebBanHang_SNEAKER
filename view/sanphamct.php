@@ -93,18 +93,15 @@
         .plus-btn{
             width: 50px;
         }
-        .congtrusp{
-            margin-bottom: 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
+       
         .themgiohang-btn{
             background-color: red;
             border: 1px solid red;
             border-radius: 10px;
             color: white;
-            width: 190px;
+            width: 590px;
             height: 40px;
+            margin-top: 50px;
         }
         .themgiohang-btn:hover{
             background-color: rgb(184, 36, 26);
@@ -227,7 +224,6 @@
                 <div class="themgiohang">
                     <?php    
                         extract($sp_banchay);
-                        $hinh = $img_path.$img;
                         $linksp = "index.php?act=sanphamct&idsp=" . $id;
                         echo '<div>
                                 <div class="row btn_addtocart"> 
@@ -236,15 +232,14 @@
                                 <input type="hidden" name="name" value="'.$name.'">
                                 <input type="hidden" name="img" value="'.$img.'">
                                 <input type="hidden" name="price" value="'.$price.'">
-                                <input type="submit" class="themgiohang-btn" name="addtocart" value="Thêm vào giỏ hàng">
+                                <input type="submit" class="themgiohang-btn" name="addtocart" value="Mua Ngay">
                                 </form>
                                 </div>
                             </div>';                                                            
                                 ?>  
                 </div>
             </div>
-            <a href="#"><button class="muangay"><h1>Mua ngay</h1><p>gọi điện xác nhận và giao hàng tận nơi</p></button></a>
-        </div>
+        </div> 
     </div>
     <!-- end spct -->
     <div class="mota-spct">

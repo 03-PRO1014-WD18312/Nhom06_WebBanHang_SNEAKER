@@ -87,7 +87,7 @@ if(isset($_SESSION['user'])){
                             
                         </div>
                         <div class="bill-twe">
-                            <p><?= $tong ?>VND</p>
+                            <p><?= number_format($tong, 0, ',', '.') ?>VND</p>
                         </div>
                     </div>
                     <div class="bill-discount"> 
